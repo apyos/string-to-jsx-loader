@@ -1,0 +1,36 @@
+{
+	"name": "string-to-jsx-loader",
+	"version": "0.0.1",
+	"description": "Webpack loader that converts strings to JSX",
+	"main": "index.js",
+	"keywords": [
+		"webpack",
+		"loader",
+		"jsx"
+	],
+	"homepage": "https://github.com/apyos/string-to-jsx-loader",
+	"authors": [
+		"Philippe Schommers <philippe@schommers.be>"
+	],
+	"license": "MIT",
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"devDependencies": {
+		"husky": "^4.2.3",
+		"lint-staged": "^10.0.9",
+		"prettier": "^2.0.2"
+	},
+	"dependencies": {
+		"parse5": "^5.1.1",
+		"webpack": "^4.42.1"
+	}
+}
