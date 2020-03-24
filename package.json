@@ -8,6 +8,7 @@
 		"loader",
 		"jsx"
 	],
+	"repository": "apyos/string-to-jsx-loader",
 	"homepage": "https://github.com/apyos/string-to-jsx-loader",
 	"authors": [
 		"Philippe Schommers <philippe@schommers.be>"
