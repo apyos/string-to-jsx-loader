@@ -28,7 +28,7 @@ module.exports = {
 
 ## Example
 
-For example, this can be used as a translation library (see [string-to-jsx-i18n](https://github.com/apyos/string-to-jsx-i18n))
+For example, this can be used as a translation library (see [preact-jsx-i18n](https://github.com/apyos/preact-jsx-i18n))
 
 ```json
 {
