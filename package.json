@@ -34,7 +34,9 @@
 		"prettier": "^2.0.2"
 	},
 	"dependencies": {
-		"parse5": "^5.1.1",
-		"webpack": "^4.42.1"
+		"parse5": "^5.1.1"
+	},
+	"peerDependencies": {
+		"webpack": ">=4"
 	}
 }
