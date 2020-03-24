@@ -1,6 +1,6 @@
 {
 	"name": "string-to-jsx-loader",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Webpack loader that converts strings to JSX",
 	"main": "src/index.js",
 	"keywords": [
