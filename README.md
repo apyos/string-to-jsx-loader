@@ -48,8 +48,7 @@ becomes
 	variable: ({ name }) => ['Hello ', name],
 	buy: ({ item, money }) => ['Buy ', item, ' for ', money, '?'],
 	html: ['This ', <b>works</b>, <i>too</i>, '!'],
-	complexHtml: ({ nest,
-elements }) => ['You can even ', <span>{nest} <b>{elements}</b></span>, '!']
+	complexHtml: ({ nest, elements }) => ['You can even ', <span>{nest} <b>{elements}</b></span>, '!']
 }
 ```
 
