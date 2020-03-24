@@ -12,7 +12,7 @@ function parseText(text) {
 						.replace(/\r/g, '\\r')
 						.replace(/\n/g, '\\n')}'`
 		)
-		.filter(value => value !== '')
+		.filter((value) => value !== '')
 }
 
 function getVariables(nodes) {
@@ -22,7 +22,7 @@ function getVariables(nodes) {
 
 	return [nodes]
 		.flat()
-		.map(node =>
+		.map((node) =>
 			node.nodeName === '#text'
 				? node.value.split(/[{}]/g).filter((_, index) => index % 2 === 1)
 				: getVariables(node.childNodes)
@@ -34,12 +34,12 @@ function compile(text) {
 	const fragment = parse5.parseFragment(text)
 	const variables = getVariables(fragment)
 	const result = fragment.childNodes
-		.map(node =>
+		.map((node) =>
 			node.nodeName === '#text'
 				? parseText(node.value)
 				: parse5.serialize({
 						nodeName: 'div',
-						childNodes: [node]
+						childNodes: [node],
 				  })
 		)
 		.flat()
